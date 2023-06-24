@@ -30,11 +30,6 @@ let choices_data = [
         id: 3,
         text: "Three",
         votes: 0
-    },
-    {
-        id: 4,
-        text: "Four",
-        votes: 0
     }
 ]
 
