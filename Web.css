@@ -129,14 +129,23 @@ body {
 
 /* News Styling */
 
-.news__wrapper {
-    /* max-width: 900px; */
-    margin: 0 auto;
-}
-
 .news__head {
     text-align: center;
     margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 50px;
+}
+
+.news__seperator {
+    display: flex;
+    height: 15px;
+    width: 100%;
+    background-color: black;
+}
+
+.section__info {
+    text-align: center;
+    font-size: 8px;
 }
 
 .news__text {
@@ -144,13 +153,27 @@ body {
 }
 
 .news__text p {
-    line-height: 1.9;
+    line-height: 1.8;
     width: 80%;
     margin: 0 auto;
     padding-top: 40px;
-    text-align: justify;
+    text-align: center;
 }
 
+.con1 {
+    margin: 0 auto;
+    /*How to unstretch picture*/
+}
+
+.section__header {
+    margin: 40px auto;
+    text-align: center;
+    font-size: 35px;
+}
+
+.news__text {
+    font-size: 16px;
+}
 
 .news__body {
     background-color: rgb(61, 61, 61);
@@ -160,44 +183,15 @@ body {
 
 .news__img {
     height: 300px;
-    margin: 15px;
     background-size: cover;
     background-position: center;
     border-radius: 15px;
+    margin: 15px auto;
 }
 
 .news__img1 {
     background-image: url('scenery2.jpg');
 }
-
-.news__img2 {
-    background-image: url('scenery3.jpg');
-}
-
-
-@media screen and (min-width: 900px){
-    .news__wrapper {
-        display: flex;
-    }
-
-    .news__text {
-        width: 50%;
-        order: 2;
-    }
-
-    .con1, .con2 {
-        width: 25%;
-    }
-
-    .con1 {
-        order: 1;
-    }
-
-    .con2 {
-        order: 3;
-    }
-}
-
 
 /* Coding Projects Styling */
 
@@ -287,3 +281,41 @@ body {
     width: 290px;
     margin: 100px auto;
 }
+
+.vote {
+    padding: 100px 40px;
+    line-height: 1.5;
+    font-size: 18px;
+    max-width: 750px;
+    margin: 0 auto;
+}
+.vote .choice {
+    background: rgb(168, 168, 168);
+    margin-top: 25px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+    text-align: center;
+}
+.vote .choice:hover {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.CompleteVote {
+    margin: 20px auto;
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 25px;
+    cursor: pointer;
+
+}
+
+.VoteTitle {
+    text-align: center;
+}
+
