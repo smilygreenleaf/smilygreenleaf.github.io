@@ -319,3 +319,11 @@ body {
     text-align: center;
 }
 
+.VoteError {
+    text-align: center;
+    transition: 1s;
+    font-size: 20px;
+    height: 0;
+    overflow: hidden;
+    background-color: darkturquoise;
+}
