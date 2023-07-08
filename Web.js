@@ -73,3 +73,5 @@ vote_btn.addEventListener('click', function(e){
         vote_error.style.height = "50px"
     }
 })
+
+console.log("This is the vote branch change")
