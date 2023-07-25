@@ -282,6 +282,30 @@ body {
     margin: 100px auto;
 }
 
+.smiley__about{
+    text-align: center;
+    padding: 20px;
+}
+
+.smiley__about__p{
+    padding: 0 10%;
+    text-align: center;
+}
+
+.smiley__services{
+    text-align: center;
+    padding: 20px;
+}
+
+.smiley__contact{
+    text-align: center;
+    padding: 20px;
+}
+
+.smiley__contact__p1{
+    text-align: center;
+}
+
 .vote {
     padding: 100px 40px 20px 40px;
     line-height: 1.5;
