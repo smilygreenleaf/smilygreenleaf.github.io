@@ -74,4 +74,60 @@ vote_btn.addEventListener('click', function(e){
     }
 })
 
-console.log("This is the vote branch change")
+const ctx = document.getElementById('myChart');
+        const plugin = {
+        id: 'customCanvasBackgroundColor',
+        beforeDraw: (chart, args, options) => {
+            const {ctx} = chart;
+            ctx.save();
+            ctx.globalCompositeOperation = 'destination-over';
+            ctx.fillStyle = options.color || '#99ffff';
+            ctx.fillRect(0, 0, chart.width, chart.height);
+            ctx.restore();
+        }
+        };
+        const data = {
+            labels: [
+                'Red',
+                'Blue',
+                'Yellow'
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [300, 50, 100],
+                hoverOffset: 4
+            }]
+            };
+
+        new Chart(ctx, {
+    type: 'doughnut',
+    offset: 100,
+    options: {
+        radius: 200,
+            plugins: {
+                legend: {
+                    labels: {
+                        padding: 40
+                    }
+                }
+            }
+        
+    },
+    data: {
+            labels: [
+                'Red',
+                'Blue',
+            ],
+            datasets: [{
+                label: 'My First Dataset',
+                data: [50, 50],
+                backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+                ],
+                hoverOffset: 4,
+            }]
+            },
+        
+  });
